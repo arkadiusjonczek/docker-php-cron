@@ -5,6 +5,6 @@ RUN docker-php-source extract \
     && docker-php-source delete
 
 RUN apt-get update \
-    && apt-get install -y cron rsyslog \
+    && apt-get install -y cron rsyslog dos2unix \
     && apt-get clean
 
